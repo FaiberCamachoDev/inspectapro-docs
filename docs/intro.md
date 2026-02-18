@@ -1,47 +1,50 @@
 ---
+id: intro
+title: Introduction
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+# Welcome to InspectaPro Docs
 
-Let's discover **Docusaurus in less than 5 minutes**.
+**InspectaPro** is a SaaS platform designed for companies that perform operational field inspections — covering areas such as technical maintenance, internal audits, quality control, inventory verification, and industrial safety.
 
-## Getting Started
+This documentation covers the full architectural and business design of the system, including data modeling decisions, system actors, process flows, and the justification behind a hybrid SQL + NoSQL data architecture.
 
-Get started by **creating a new site**.
+---
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+## Teammates
 
-### What you'll need
+| # | Name |
+|---|------|
+| 1 | Faiber Camacho |
+| 2 | Ximena Jaramillo |
+| 3 | Cesar Rios |
+| 4 | Samuel Cardona |
 
-- [Node.js](https://nodejs.org/en/download/) version 20.0 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+---
 
-## Generate a new site
+##  How to navigate this documentation
 
-Generate a new Docusaurus site using the **classic template**.
+Use the **left sidebar** to move between sections. The documentation is organized in the following order:
 
-The classic template will automatically be added to your project after you run the command:
+| Section | Description |
+|---------|-------------|
+|  Business Interpretation | Business model, actors, rules, and lifecycle |
+|  Use Cases | Complete use case diagram and descriptions |
+|  Flow Diagrams | Inspection lifecycle with states and decision points |
+|  Relational Model (SQL) | Normalized ERD and entity justifications |
+|  Document Model (NoSQL) | JSON document structure for dynamic inspection data |
+|  Architectural Justification | Why hybrid, risks, and how both models connect |
 
-```bash
-npm init docusaurus@latest my-website classic
-```
+>  **Tip:** Each section is self-contained but all sections are coherent with each other — business rules connect to the SQL model, which connects to the NoSQL model, which connects to the architectural justification.
 
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
+---
 
-The command also installs all necessary dependencies you need to run Docusaurus.
+##  Purpose of this project
 
-## Start your site
+This project goes beyond simple CRUD thinking. It demonstrates:
 
-Run the development server:
-
-```bash
-cd my-website
-npm run start
-```
-
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
-
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
-
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+- How to identify what data is structured vs. dynamic.
+- How normalization applies in real business contexts.
+- How document modeling supports flexibility and evolution.
+- How business requirements shape data architecture decisions.
